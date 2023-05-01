@@ -1,0 +1,23 @@
+.homepage{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 2%;
+    font-size: 18px;
+}
+h1  {
+    display: flex;
+    justify-content: center;
+    margin: 1%;
+}
+img{
+    display: flex ;
+}
+.image{
+    justify-content: center;
+    width: 70%;
+    height: auto;
+    margin:2%;
+    border-radius: 10px;
+}

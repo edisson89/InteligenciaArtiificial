@@ -1,0 +1,95 @@
+.home {
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(225, 229, 228);
+  min-width: 250px;
+  min-height: 100vh;
+  margin: 0%;
+}
+h2{
+  color: #66b0a6;
+  animation-duration: 5s;
+  animation-name: slidein;
+}
+@keyframes slidein {
+  from {
+    margin-left: 100%;
+   rotate: 90px;;
+  }
+
+  to {
+    margin-left: 0%;
+   rotate: 0;
+  }
+}
+.navBar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  background-color: rgb(77, 130, 130, 1);
+  height: 5rem;
+}
+
+.logo {
+  width: 70px;
+  height: auto;
+  border-radius: 100px;
+  animation: flip;
+  animation-duration:0.5s;
+}
+@keyframes flip {
+  from { 
+    width: 10%;
+    opacity:0.7 
+  }
+  to{
+    width: 100%;
+    opacity:  0.6;
+  }
+  to {
+   
+    width: 170%;
+    opacity:  0.2;
+  }
+}
+.menu {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-content: flex-end;
+}
+@media (max-width: 720px) {
+  .navBar {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: initial;
+    height: auto;
+    color: aliceblue;
+  }
+  h1 {
+    font-size: 2rem;
+    justify-content: center;
+  }
+  h2{
+    color: #66b0a6;
+    animation: 3s infinite alternate slidein;
+  }
+
+  .title{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 25%;
+  
+  }
+  .logo{
+    align-self: start;
+    margin:0.5%;
+    margin-top: -7%;
+    position: absolute;
+  
+  }
+}
